@@ -1,3 +1,5 @@
+// https://flowbite.com/blocks/e-commerce/navbars/
+
 export default function NavBar() {
   return (
     <nav className="bg-white dark:bg-gray-800 antialiased">
