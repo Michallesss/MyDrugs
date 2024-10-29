@@ -22,7 +22,7 @@ export default function Landing() {
             alt="shopping illustration" />
         </div>
       </div>
-      <div
+      {/* <div
         className="mx-auto grid max-w-screen-xl grid-cols-2 gap-8 text-gray-500 dark:text-gray-400 sm:grid-cols-3 sm:gap-12 lg:grid-cols-6 px-4">
         <a href="#" className="flex items-center md:justify-center">
           <svg className="h-10 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 106 48" fill="none"
@@ -105,7 +105,7 @@ export default function Landing() {
               fill="currentColor" />
           </svg>
         </a>
-      </div>
+      </div> */}
     </main>
   );
 }
