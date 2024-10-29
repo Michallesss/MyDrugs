@@ -1,4 +1,5 @@
-// https://flowbite.com/blocks/e-commerce/product-categories/
+// TODO
+// mapping categories
 
 export default function CategoriesPage() {
   return (
