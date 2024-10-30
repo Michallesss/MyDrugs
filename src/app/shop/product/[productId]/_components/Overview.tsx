@@ -106,6 +106,17 @@ export default function Overview() {
               </div> */}
             </div>
 
+            <div className="mt-4 sm:items-center sm:gap-4 sm:flex"> {/* // TODO mapping */}
+              <Link href="#" className="flex items-center gap-2 mt-2 sm:mt-0">
+                <span className="inline-block px-3 py-1 text-sm font-medium text-gray-900 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">
+                  New
+                </span>
+                <span className="inline-block px-3 py-1 text-sm font-medium text-gray-900 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">
+                  Sale
+                </span>
+              </Link>
+            </div>
+
             <div className="mt-6 sm:gap-4 sm:items-center sm:flex sm:mt-8">
               <a
                 href="#"
