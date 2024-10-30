@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Reviews() {
   return (
     <>
@@ -44,7 +46,7 @@ export default function Reviews() {
               <div className="h-1.5 w-80 rounded-full bg-gray-200 dark:bg-gray-700">
                 <div className="h-1.5 rounded-full bg-yellow-300"></div>
               </div>
-              <a href="#" className="w-8 shrink-0 text-right text-sm font-medium leading-none text-primary-700 hover:underline dark:text-primary-500 sm:w-auto sm:text-left">239 <span className="hidden sm:inline">reviews</span></a>
+              <Link href="#" className="w-8 shrink-0 text-right text-sm font-medium leading-none text-primary-700 hover:underline dark:text-primary-500 sm:w-auto sm:text-left">239 <span className="hidden sm:inline">reviews</span></Link>
             </div>
 
             <div className="flex items-center gap-2">
@@ -77,7 +79,7 @@ export default function Reviews() {
               <div className="h-1.5 w-80 rounded-full bg-gray-200 dark:bg-gray-700">
                 <div className="h-1.5 rounded-full bg-yellow-300"></div>
               </div>
-              <a href="#" className="w-8 shrink-0 text-right text-sm font-medium leading-none text-primary-700 hover:underline dark:text-primary-500 sm:w-auto sm:text-left">32 <span className="hidden sm:inline">reviews</span></a>
+              <Link href="#" className="w-8 shrink-0 text-right text-sm font-medium leading-none text-primary-700 hover:underline dark:text-primary-500 sm:w-auto sm:text-left">32 <span className="hidden sm:inline">reviews</span></Link>
             </div>
 
             <div className="flex items-center gap-2">
@@ -88,7 +90,7 @@ export default function Reviews() {
               <div className="h-1.5 w-80 rounded-full bg-gray-200 dark:bg-gray-700">
                 <div className="h-1.5 rounded-full bg-yellow-300"></div>
               </div>
-              <a href="#" className="w-8 shrink-0 text-right text-sm font-medium leading-none text-primary-700 hover:underline dark:text-primary-500 sm:w-auto sm:text-left">13 <span className="hidden sm:inline">reviews</span></a>
+              <Link href="#" className="w-8 shrink-0 text-right text-sm font-medium leading-none text-primary-700 hover:underline dark:text-primary-500 sm:w-auto sm:text-left">13 <span className="hidden sm:inline">reviews</span></Link>
             </div>
           </div>
         </div>
@@ -406,7 +408,7 @@ export default function Reviews() {
           <div className="flex items-center justify-between rounded-t border-b border-gray-200 p-4 dark:border-gray-700 md:p-5">
             <div>
               <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Add a review for:</h3>
-              <a href="#" className="font-medium text-primary-700 hover:underline dark:text-primary-500">Apple iMac 24" All-In-One Computer, Apple M1, 8GB RAM, 256GB SSD</a>
+              <Link href="#" className="font-medium text-primary-700 hover:underline dark:text-primary-500">Apple iMac 24" All-In-One Computer, Apple M1, 8GB RAM, 256GB SSD</Link>
             </div>
             <button type="button" className="absolute right-5 top-5 ms-auto inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="review-modal">
               <svg className="h-3 w-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -445,7 +447,7 @@ export default function Reviews() {
               <div className="col-span-2">
                 <label htmlFor="description" className="mb-2 block text-sm font-medium text-gray-900 dark:text-white">Review description</label>
                 <textarea id="description" rows={6} className="mb-2 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required></textarea>
-                <p className="ms-auto text-xs text-gray-500 dark:text-gray-400">Problems with the product or delivery? <a href="#" className="text-primary-600 hover:underline dark:text-primary-500">Send a report</a>.</p>
+                <p className="ms-auto text-xs text-gray-500 dark:text-gray-400">Problems with the product or delivery? <Link href="#" className="text-primary-600 hover:underline dark:text-primary-500">Send a report</Link>.</p>
               </div>
               <div className="col-span-2">
                 <p className="mb-2 block text-sm font-medium text-gray-900 dark:text-white">Add real photos of the product to help other customers <span className="text-gray-500 dark:text-gray-400">(Optional)</span></p>

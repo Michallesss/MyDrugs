@@ -1,4 +1,4 @@
-// https://flowbite.com/blocks/e-commerce/navbars/
+import Link from "next/link";
 
 export default function NavBar() {
   return (
@@ -8,27 +8,27 @@ export default function NavBar() {
 
           <div className="flex items-center space-x-8">
             <div className="shrink-0">
-              <a href="/" title="" className="">
+              <Link href="/" title="" className="">
                 <img className="block w-auto h-8 dark:hidden" src="../../mydrugs.jpg" alt="" />
                 <img className="hidden w-auto h-8 dark:block" src="../../mydrugs.jpg" alt="" />
-              </a>
+              </Link>
             </div>
 
             <ul className="hidden lg:flex items-center justify-start gap-6 md:gap-8 py-3 sm:justify-center">
               <li>
-                <a href="/shop" title="" className="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                <Link href="/shop" title="" className="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
                   Shop
-                </a>
+                </Link>
               </li>
               <li className="shrink-0">
-                <a href="/shop/categories" title="" className="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                <Link href="/shop/categories" title="" className="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
                   Categories
-                </a>
+                </Link>
               </li>
               <li className="shrink-0">
-                <a href="/shop/sell" title="" className="text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                <Link href="/shop/sell" title="" className="text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
                   Sell
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

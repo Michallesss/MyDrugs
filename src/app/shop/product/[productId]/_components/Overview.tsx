@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Overview() {
   return (
     <section className="py-8 bg-white md:py-16 dark:bg-gray-900 antialiased">
@@ -22,7 +24,7 @@ export default function Overview() {
                 $1,249.99
               </p>
 
-              <div className="flex items-center gap-2 mt-2 sm:mt-0">
+              {/* <div className="flex items-center gap-2 mt-2 sm:mt-0">
                 <div className="flex items-center gap-1">
                   <svg
                     className="w-4 h-4 text-yellow-300"
@@ -95,13 +97,13 @@ export default function Overview() {
                 >
                   (5.0)
                 </p>
-                <a
+                <Link
                   href="#"
                   className="text-sm font-medium leading-none text-gray-900 underline hover:no-underline dark:text-white"
                 >
                   345 Reviews
-                </a>
-              </div>
+                </Link>
+              </div> */}
             </div>
 
             <div className="mt-6 sm:gap-4 sm:items-center sm:flex sm:mt-8">
@@ -131,7 +133,7 @@ export default function Overview() {
                 Add to favorites
               </a>
 
-              <a
+              <Link
                 href="#"
                 title=""
                 className="text-white mt-4 sm:mt-0 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 flex items-center justify-center"
@@ -156,7 +158,7 @@ export default function Overview() {
                 </svg>
 
                 Add to cart
-              </a>
+              </Link>
             </div>
 
             <hr className="my-6 md:my-8 border-gray-200 dark:border-gray-800" />
