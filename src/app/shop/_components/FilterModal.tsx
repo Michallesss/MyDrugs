@@ -1,7 +1,6 @@
 // TODO
 // mapping
 
-/*
 export default function FilterModal() {
   return (
     <form action="#" method="get" id="filterModal" tabIndex={-1} aria-hidden="true" className="fixed left-0 right-0 top-0 z-50 hidden h-modal w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0 md:h-full">
@@ -616,4 +615,3 @@ export default function FilterModal() {
     </form>
   );
 }
-*/
