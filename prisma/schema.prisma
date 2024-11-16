@@ -15,6 +15,9 @@ model User {
   name     String?
   email    String   @unique
   password String
+  // cart
+  cart     Cart   @relation(fields: [cartId], references: [id])
+  cartId   Int
 }
 
 model Product {
@@ -24,22 +27,22 @@ model Product {
   price       Float
   image       String
   // tags
+  tags        Tags[]
+  // cart
+  carts       Cart[]
 }
 
 model Tags {
   id        Int      @id @default(autoincrement())
   name      String
-}
-
-model Order {
-  id        Int     @id @default(autoincrement())
-  // customer
-  // status
   // products
+  products  Product[]
 }
 
-// enum OrderStatus {
-//   PLACED
-//   PAID
-//   DONE
-// }
+model Cart {
+  id        Int      @id @default(autoincrement())
+  // owner
+  user      User[]   
+  // products
+  products  Product[]
+}
