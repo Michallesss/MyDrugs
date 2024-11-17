@@ -16,8 +16,6 @@ model User {
   email    String   @unique
   password String
   // cart
-  cart     Cart   @relation(fields: [cartId], references: [id])
-  cartId   Int
 }
 
 model Product {
@@ -27,22 +25,17 @@ model Product {
   price       Float
   image       String
   // tags
-  tags        Tags[]
   // cart
-  carts       Cart[]
 }
 
 model Tags {
   id        Int      @id @default(autoincrement())
   name      String
   // products
-  products  Product[]
 }
 
 model Cart {
   id        Int      @id @default(autoincrement())
   // owner
-  user      User[]   
   // products
-  products  Product[]
 }
