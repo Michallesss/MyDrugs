@@ -1,3 +1,5 @@
+// https://flowbite.com/blocks/e-commerce/shopping-cart/
+
 export default function CartPage() {
   return (
     <div>
