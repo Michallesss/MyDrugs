@@ -1,5 +1,7 @@
 'use client';
+// Next
 import { useParams } from "next/navigation";
+// Components
 import Overview from "./_components/Overview";
 // import Description from "./_components/Description";
 // import Reviews from "./_components/Reviews";

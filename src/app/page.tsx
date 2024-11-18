@@ -1,5 +1,3 @@
-// https://flowbite.com/blocks/e-commerce/storefront-hero/
-
 export default function Landing() {
   return (
     <main className="bg-white antialiased dark:bg-gray-900 md:py-16">
