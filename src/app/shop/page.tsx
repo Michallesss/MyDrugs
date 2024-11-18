@@ -1,10 +1,12 @@
 'use client';
+// Next
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+// Components
 import Card from "./_components/Card";
-import { IProduct, products } from "../../../prisma/testContent";
 // import FilterModal from "./_components/FilterModal";
 // import SortModal from "./_components/Sort.Modal";
+import { IProduct, products } from "../../../prisma/testContent";
 
 export default function ShopPage() {
   const searchParams = useSearchParams();
@@ -12,7 +14,7 @@ export default function ShopPage() {
   const category: string = searchParams.get("category") || "All";
   const path: string[] = [category];
 
-  const showMore = (e: any) => {};
+  // const showMore = (e: any) => {};
 
   return (
     <section className="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-12">
